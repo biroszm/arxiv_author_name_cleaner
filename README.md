@@ -66,7 +66,7 @@ p(person) >= person_threshold -> PERSON
 
 For example:
 
-![Threshold explanation](figures/preview_1.png)
+![Threshold explanation](preview_1.png)
 
 The uncertain category is intentionally preserved. Instead of forcing every ambiguous string into either `PERSON` or `NON_PERSON`, the pipeline keeps a review buffer for borderline cases.
 
@@ -215,7 +215,7 @@ The model-level evaluation showed:
 - very high precision across most threshold values,
 - strong separation between person and non-person classes.
 
-![Model evaluation](figures/preview_2.png)
+![Model evaluation](preview_2.png)
 
 The confusion matrix shows that the model performs very well on the labelled evaluation set. The most important error type for this project is the false positive case:
 
@@ -244,7 +244,7 @@ The output-level diagnostics include:
 - distribution of accepted-author frequencies,
 - distribution of scores among uncertain candidates.
 
-![Output diagnostics](figures/preview_3.png)
+![Output diagnostics](preview_3.png)
 
 The top accepted candidates mostly contain plausible person names such as abbreviated initials and common author-name patterns.
 
